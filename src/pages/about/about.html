@@ -1,11 +1,23 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Orders
     </ion-title>
   </ion-navbar>
+  <script src="/path/to/lockr.js" type="text/javascript"></script>
 </ion-header>
 
 <ion-content padding>
-
+<ion-list *ngFor="let items of list">
+  <ion-item padding>
+    {{items.name}}<hr>{{items.amount}}<hr><p>*</p>{{items.price}}<hr><p>=</p><hr>{{total}}
+  </ion-item>
+</ion-list>
+<hr>
+<p>The total is:</p>
+<p>{{total}}(USD)</p>
+<hr>
+<button ion-button (click)="checkout()">
+  Checkout
+</button>
 </ion-content>

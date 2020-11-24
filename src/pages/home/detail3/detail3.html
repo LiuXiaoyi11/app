@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Appetizer</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <img src='assets/imgs/appetizer.jpg'/>
+  <hr>
+  <p>
+    YUM CHA at Langham Place features a modern, vibrant East-meets-West dining atmosphere, offering authentic Chinese food coupled with contemporary presentations.
+  </p>
+  <hr>
+  <select [(ngModel)]="amount">
+     <option value="1">1</option>
+      <option value="2">2</option>
+       <option value="3">3</option>
+        <option value="4">4</option>
+         <option value="5">5</option>
+          <option value="6">6</option>
+           <option value="7">7</option>
+            <option value="8">8</option>
+             <option value="9">9</option>
+              <option value="10">10</option>
+   </select>
+  <button (click)="addtoOrder">Order</button>
+</ion-content>

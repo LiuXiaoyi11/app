@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Edit your order
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="close()"><ion-icon name="close"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Add your order here</h1>
+  <ion-list>
+    <p>Name</p>
+    <input type="text" name="Name" [(ngModel)]="name">
+    <hr>
+    <p>Price</p>
+    <input type="number" name="Price" [(ngModel)]="price">
+    <hr>
+    <p>category</p>
+    <select [(ngModel)]="category">
+      <option value="dish">dish</option>
+      <option value="appetizer">appetizer</option>
+    </select>
+    <hr>
+    <button ion-button (click)="addtoMenu()">Ok</button>
+  </ion-list>
+  <ion-list>
+    <p>{{name}}</p>
+    <p>{{price}}</p>
+    <p>{{category}}</p>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>FriedRice</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <img src='assets/imgs/FriedRice.jpg'/>
+  <hr>
+  <p>
+    Fried rice is a dish of cooked rice that has been stir-fried in a wok or a frying pan and is usually mixed with other ingredients such as eggs, vegetables, seafood, or meat. It is often eaten by itself or as an accompaniment to another dish.
+  </p>
+  <hr>
+  <select [(ngModel)]="amount">
+     <option value="1">1</option>
+      <option value="2">2</option>
+       <option value="3">3</option>
+        <option value="4">4</option>
+         <option value="5">5</option>
+          <option value="6">6</option>
+           <option value="7">7</option>
+            <option value="8">8</option>
+             <option value="9">9</option>
+              <option value="10">10</option>
+   </select>
+  <button (click)="addtoOrder()">Order</button>
+</ion-content>

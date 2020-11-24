@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Noodles</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <img src='assets/imgs/noddles.jpg'/>
+  <hr>
+  <p>This dish is so simple yet so flavorful - Japanese udon noodles stir fried in butter and soy sauce and topped with chopped scallions, shredded nori and bonito flakes. A top choice for bar food in Tokyo, pair these thick and chewy noodles with a cold beer for the full izakaya experience
+  </p>
+  <hr>
+  <p> Price: 8 USD </p>
+  <hr>
+  <select [(ngModel)]="amount">
+     <option value="1">1</option>
+      <option value="2">2</option>
+       <option value="3">3</option>
+        <option value="4">4</option>
+         <option value="5">5</option>
+          <option value="6">6</option>
+           <option value="7">7</option>
+            <option value="8">8</option>
+             <option value="9">9</option>
+              <option value="10">10</option>
+   </select>
+  <button (click)="addtoOrder()">Order</button>
+</ion-content>
